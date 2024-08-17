@@ -37,7 +37,8 @@ current_number = ""  # Global variable to track the current phone number being p
 
 def send_message_via_signal_cli(phone_number: str, message: str):
     try:
-        command = f'cmd /c C:\\signal\\bin\\signal-cli -u +923325278158 send -m "{message}" {phone_number}'
+        # Adjust the command for macOS
+        command = f'/usr/local/bin/signal-cli -u +923325278158 send -m "{message}" {phone_number}'
         logger.info(f"Executing command: {command}")
         result = subprocess.run(command, capture_output=True, text=True, shell=True)
 
@@ -50,7 +51,6 @@ def send_message_via_signal_cli(phone_number: str, message: str):
     except Exception as e:
         logger.error(f"Exception occurred while sending message to {phone_number}. Exception: {str(e)}")
         return False, str(e)
-
 
 def send_sms_background():
     global sending_active, current_number

@@ -11,7 +11,11 @@
             padding: 0;
             font-family: Arial, sans-serif;
             background-color: #f0f4f8;
-            overflow: hidden;
+            overflow-y: auto; /* Allow vertical scrolling */
+            min-height: 100vh; /* Ensure body takes full height */
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center;
         }
 
         .background {
@@ -64,9 +68,9 @@
 
         /* Container CSS */
         .container {
-            width: 80%;
+            width: 90%;
             max-width: 1000px;
-            margin: 0 auto;
+            margin: 20px;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent to show background effect */
             border-radius: 8px;
@@ -90,6 +94,7 @@
             border-radius: 4px;
             margin-bottom: 20px;
             box-sizing: border-box;
+            resize: vertical; /* Allow vertical resizing */
         }
 
         input[type="submit"], input[type="button"] {
@@ -102,6 +107,9 @@
             cursor: pointer;
             transition: background-color 0.3s;
             margin-right: 10px;
+            width: calc(50% - 5px); /* Two buttons take up 50% each with some margin */
+            max-width: 200px; /* Limit the width on larger screens */
+            box-sizing: border-box;
         }
 
         input[type="submit"]:hover, input[type="button"]:hover {
@@ -120,12 +128,15 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
+            overflow-x: auto; /* Enable horizontal scrolling on small screens */
+            display: block;
         }
 
         th, td {
             padding: 12px;
             text-align: left;
             border-bottom: 1px solid #ddd;
+            min-width: 150px; /* Ensure table cells have a minimum width */
         }
 
         th {
@@ -143,6 +154,17 @@
             border: 1px solid #ddd;
             border-radius: 4px;
             background-color: #eaf4f4;
+        }
+
+        /* Responsive CSS */
+        @media (max-width: 768px) {
+            textarea {
+                height: auto;
+            }
+
+            input[type="submit"], input[type="button"] {
+                width: calc(50% - 5px); /* Two buttons take up 50% each with some margin */
+            }
         }
     </style>
 </head>
@@ -181,80 +203,85 @@
             </tbody>
         </table>
     </div>
+<script>
+    let eventSource;
+    let statusInterval;
 
-    <script>
-        let eventSource;
-        let statusInterval;
+    document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById("stopButton").disabled = true;  // Ensure stopButton is disabled when page loads
+    });
 
-        document.addEventListener('DOMContentLoaded', () => {
-            document.getElementById("stopButton").disabled = true;  // Ensure stopButton is disabled when page loads
+    async function sendMessage() {
+        const numbers = document.getElementById("numbers").value;
+        const message = document.getElementById("message").value;
+
+        // Create a new form data object
+        const formData = new FormData();
+        formData.append('numbers', numbers);
+        formData.append('message', message);
+
+        // Disable the Send SMS button and enable the Stop Sending button
+        document.getElementById("sendButton").disabled = true;
+        document.getElementById("stopButton").disabled = false;
+
+        // Send the form data to the server
+        const response = await fetch('/send-sms', {
+            method: 'POST',
+            body: formData
         });
 
-        async function sendMessage() {
-            const numbers = document.getElementById("numbers").value;
-            const message = document.getElementById("message").value;
+        if (response.ok) {
+            eventSource = new EventSource('/send-sms-stream');
+            eventSource.onmessage = function(event) {
+                if (event.data === "event: close") {
+                    eventSource.close();
+                    document.getElementById("sendButton").disabled = false; // Re-enable Send SMS button
+                    document.getElementById("stopButton").disabled = true; // Disable Stop Sending button
+                    clearInterval(statusInterval);
+                } else {
+                    const [number, status, details] = event.data.split(",");
+                    const table = document.getElementById("results").getElementsByTagName('tbody')[0];
+                    const row = table.insertRow(-1);
+                    const cell1 = row.insertCell(0);
+                    const cell2 = row.insertCell(1);
+                    const cell3 = row.insertCell(2);
+                    cell1.innerHTML = number;
+                    cell2.innerHTML = status;
+                    cell3.innerHTML = details;
+                }
+            };
 
-            // Create a new form data object
-            const formData = new FormData();
-            formData.append('numbers', numbers);
-            formData.append('message', message);
-
-            // Send the form data to the server
-            const response = await fetch('/send-sms', {
-                method: 'POST',
-                body: formData
-            });
-
-            if (response.ok) {
-                document.getElementById("sendButton").disabled = true;
-                document.getElementById("stopButton").disabled = false;
-
-                eventSource = new EventSource('/send-sms-stream');
-                eventSource.onmessage = function(event) {
-                    if (event.data === "event: close") {
-                        eventSource.close();
-                        document.getElementById("sendButton").disabled = false;
-                        document.getElementById("stopButton").disabled = true;
-                        clearInterval(statusInterval);
-                    } else {
-                        const [number, status, details] = event.data.split(",");
-                        const table = document.getElementById("results").getElementsByTagName('tbody')[0];
-                        const row = table.insertRow(-1);
-                        const cell1 = row.insertCell(0);
-                        const cell2 = row.insertCell(1);
-                        const cell3 = row.insertCell(2);
-                        cell1.innerHTML = number;
-                        cell2.innerHTML = status;
-                        cell3.innerHTML = details;
-                    }
-                };
-
-                // Start periodic status updates
-                statusInterval = setInterval(updateStatus, 1000);
-            } else {
-                alert("Failed to start SMS sending.");
-            }
+            // Start periodic status updates
+            statusInterval = setInterval(updateStatus, 1000);
+        } else {
+            alert("Failed to start SMS sending.");
+            // Re-enable the Send SMS button if failed
+            document.getElementById("sendButton").disabled = false;
         }
+    }
 
-        async function stopSending() {
-            const response = await fetch('/stop-sms', { method: 'POST' });
-            if (response.ok) {
-                document.getElementById("sendButton").disabled = false;
-                document.getElementById("stopButton").disabled = true;
-                clearInterval(statusInterval);
-                alert("SMS sending stopped.");
-            } else {
-                alert("Failed to stop SMS sending.");
-            }
+    async function stopSending() {
+        const response = await fetch('/stop-sms', { method: 'POST' });
+        if (response.ok) {
+            document.getElementById("sendButton").disabled = false; // Re-enable Send SMS button
+            document.getElementById("stopButton").disabled = true; // Disable Stop Sending button
+            clearInterval(statusInterval);
+            alert("SMS sending stopped.");
+        } else {
+            alert("Failed to stop SMS sending.");
         }
+    }
 
-        async function updateStatus() {
-            const response = await fetch('/current-status');
-            if (response.ok) {
-                const data = await response.json();
-                document.getElementById("status").innerText = `Sending message to: ${data.current_number}`;
-            }
+    async function updateStatus() {
+        const response = await fetch('/current-status');
+        if (response.ok) {
+            const data = await response.json();
+            document.getElementById("status").innerText = `Sending message to: ${data.current_number}`;
+        } else {
+            document.getElementById("status").innerText = "Unable to fetch status.";
         }
-    </script>
+    }
+</script>
+
 </body>
 </html>
