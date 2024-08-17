@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send SMS via Signal-CLI</title>
+    <style>
+        /* Background animation CSS */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            overflow: hidden;
+        }
+
+        .background {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #111;
+        }
+
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+            box-shadow: 0 0 100px 20px rgba(255, 255, 255, 0.2);
+            animation: pulse 5s infinite ease-in-out;
+        }
+
+        .circle:nth-child(1) {
+            width: 300px;
+            height: 300px;
+            animation-delay: 0s;
+        }
+
+        .circle:nth-child(2) {
+            width: 600px;
+            height: 600px;
+            animation-delay: 2s;
+        }
+
+        .circle:nth-child(3) {
+            width: 900px;
+            height: 900px;
+            animation-delay: 4s;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(0.9);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.7;
+            }
+        }
+
+        /* Container CSS */
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent to show background effect */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+
+        h2 {
+            color: #4a90e2;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"], input[type="button"] {
+            background-color: #4a90e2;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-right: 10px;
+        }
+
+        input[type="submit"]:hover, input[type="button"]:hover {
+            background-color: #357abd;
+        }
+
+        input[type="button"] {
+            background-color: #d9534f;
+        }
+
+        input[type="button"]:hover {
+            background-color: #c9302c;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4a90e2;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .status {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #eaf4f4;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <div class="container">
+        <h2>Send SMS via Signal-CLI</h2>
+        <form onsubmit="event.preventDefault(); sendMessage();">
+            <label for="numbers">Phone Numbers (comma separated, one per line):</label><br>
+            <textarea id="numbers" name="numbers" rows="10"></textarea><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="6"></textarea><br>
+            <input type="submit" id="sendButton" value="Send SMS">
+            <input type="button" id="stopButton" value="Stop Sending" onclick="stopSending();" disabled>
+        </form>
+        <div class="status">
+            <h2>Current Status</h2>
+            <p id="status">No message being sent currently.</p>
+        </div>
+        <h2>SMS Sending Results</h2>
+        <table id="results">
+            <thead>
+                <tr>
+                    <th>Phone Number</th>
+                    <th>Status</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Results will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        let eventSource;
+        let statusInterval;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById("stopButton").disabled = true;  // Ensure stopButton is disabled when page loads
+        });
+
+        async function sendMessage() {
+            const numbers = document.getElementById("numbers").value;
+            const message = document.getElementById("message").value;
+
+            // Create a new form data object
+            const formData = new FormData();
+            formData.append('numbers', numbers);
+            formData.append('message', message);
+
+            // Send the form data to the server
+            const response = await fetch('/send-sms', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                document.getElementById("sendButton").disabled = true;
+                document.getElementById("stopButton").disabled = false;
+
+                eventSource = new EventSource('/send-sms-stream');
+                eventSource.onmessage = function(event) {
+                    if (event.data === "event: close") {
+                        eventSource.close();
+                        document.getElementById("sendButton").disabled = false;
+                        document.getElementById("stopButton").disabled = true;
+                        clearInterval(statusInterval);
+                    } else {
+                        const [number, status, details] = event.data.split(",");
+                        const table = document.getElementById("results").getElementsByTagName('tbody')[0];
+                        const row = table.insertRow(-1);
+                        const cell1 = row.insertCell(0);
+                        const cell2 = row.insertCell(1);
+                        const cell3 = row.insertCell(2);
+                        cell1.innerHTML = number;
+                        cell2.innerHTML = status;
+                        cell3.innerHTML = details;
+                    }
+                };
+
+                // Start periodic status updates
+                statusInterval = setInterval(updateStatus, 1000);
+            } else {
+                alert("Failed to start SMS sending.");
+            }
+        }
+
+        async function stopSending() {
+            const response = await fetch('/stop-sms', { method: 'POST' });
+            if (response.ok) {
+                document.getElementById("sendButton").disabled = false;
+                document.getElementById("stopButton").disabled = true;
+                clearInterval(statusInterval);
+                alert("SMS sending stopped.");
+            } else {
+                alert("Failed to stop SMS sending.");
+            }
+        }
+
+        async function updateStatus() {
+            const response = await fetch('/current-status');
+            if (response.ok) {
+                const data = await response.json();
+                document.getElementById("status").innerText = `Sending message to: ${data.current_number}`;
+            }
+        }
+    </script>
+</body>
+</html>
