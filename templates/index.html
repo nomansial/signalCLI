@@ -97,74 +97,43 @@
             resize: vertical; /* Allow vertical resizing */
         }
 
-        input[type="submit"], input[type="button"] {
-            background-color: #4a90e2;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
+        input[type="number"], input[type="submit"], input[type="button"] {
+            padding: 10px;
             font-size: 16px;
+            border: 1px solid #ddd;
             border-radius: 4px;
+            background-color: #4a90e2;
+            color: white;
             cursor: pointer;
-            transition: background-color 0.3s;
-            margin-right: 10px;
-            width: calc(50% - 5px); /* Two buttons take up 50% each with some margin */
-            max-width: 200px; /* Limit the width on larger screens */
-            box-sizing: border-box;
+            margin-top: 10px;
         }
 
-        input[type="submit"]:hover, input[type="button"]:hover {
-            background-color: #357abd;
+        input[type="submit"]:disabled, input[type="button"]:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
         }
 
-        input[type="button"] {
-            background-color: #d9534f;
-        }
-
-        input[type="button"]:hover {
-            background-color: #c9302c;
+        .status {
+            margin-top: 20px;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
-            overflow-x: auto; /* Enable horizontal scrolling on small screens */
-            display: block;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
         }
 
         th, td {
-            padding: 12px;
+            padding: 10px;
             text-align: left;
-            border-bottom: 1px solid #ddd;
-            min-width: 150px; /* Ensure table cells have a minimum width */
         }
 
         th {
-            background-color: #4a90e2;
-            color: #fff;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        .status {
-            margin-top: 20px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            background-color: #eaf4f4;
-        }
-
-        /* Responsive CSS */
-        @media (max-width: 768px) {
-            textarea {
-                height: auto;
-            }
-
-            input[type="submit"], input[type="button"] {
-                width: calc(50% - 5px); /* Two buttons take up 50% each with some margin */
-            }
+            background-color: #f4f4f4;
         }
     </style>
 </head>
@@ -182,6 +151,8 @@
             <textarea id="numbers" name="numbers" rows="10"></textarea><br>
             <label for="message">Message:</label><br>
             <textarea id="message" name="message" rows="6"></textarea><br>
+            <label for="delay">Delay between sending messages (in seconds):</label><br>
+            <input type="number" id="delay" name="delay" min="0" value="0"><br>
             <input type="submit" id="sendButton" value="Send SMS">
             <input type="button" id="stopButton" value="Stop Sending" onclick="stopSending();" disabled>
         </form>
@@ -203,6 +174,7 @@
             </tbody>
         </table>
     </div>
+
 <script>
     let eventSource;
     let statusInterval;
@@ -214,11 +186,13 @@
     async function sendMessage() {
         const numbers = document.getElementById("numbers").value;
         const message = document.getElementById("message").value;
+        const delay = document.getElementById("delay").value;
 
         // Create a new form data object
         const formData = new FormData();
         formData.append('numbers', numbers);
         formData.append('message', message);
+        formData.append('delay', delay);
 
         // Disable the Send SMS button and enable the Stop Sending button
         document.getElementById("sendButton").disabled = true;
@@ -255,33 +229,36 @@
             statusInterval = setInterval(updateStatus, 1000);
         } else {
             alert("Failed to start SMS sending.");
-            // Re-enable the Send SMS button if failed
+            // Re-enable the Send SMS button and disable the Stop Sending button
             document.getElementById("sendButton").disabled = false;
-        }
-    }
-
-    async function stopSending() {
-        const response = await fetch('/stop-sms', { method: 'POST' });
-        if (response.ok) {
-            document.getElementById("sendButton").disabled = false; // Re-enable Send SMS button
-            document.getElementById("stopButton").disabled = true; // Disable Stop Sending button
-            clearInterval(statusInterval);
-            alert("SMS sending stopped.");
-        } else {
-            alert("Failed to stop SMS sending.");
+            document.getElementById("stopButton").disabled = true;
         }
     }
 
     async function updateStatus() {
-        const response = await fetch('/current-status');
-        if (response.ok) {
-            const data = await response.json();
-            document.getElementById("status").innerText = `Sending message to: ${data.current_number}`;
-        } else {
-            document.getElementById("status").innerText = "Unable to fetch status.";
+        try {
+            const response = await fetch('/current-status');
+            if (response.ok) {
+                const data = await response.json();
+                document.getElementById("status").innerText = data.status;
+            } else {
+                document.getElementById("status").innerText = "Failed to fetch status.";
+            }
+        } catch (error) {
+            document.getElementById("status").innerText = "Failed to fetch status.";
+            console.error('Error fetching status:', error);
         }
     }
-</script>
 
+    function stopSending() {
+        if (eventSource) {
+            eventSource.close();
+        }
+        document.getElementById("sendButton").disabled = false; // Re-enable Send SMS button
+        document.getElementById("stopButton").disabled = true; // Disable Stop Sending button
+        clearInterval(statusInterval); // Stop status updates
+        fetch('/stop-sms', { method: 'POST' });
+    }
+</script>
 </body>
 </html>
