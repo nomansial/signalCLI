@@ -1,11 +1,10 @@
-from fastapi import FastAPI, Form, Request
-from fastapi.responses import HTMLResponse, StreamingResponse
-from fastapi.templating import Jinja2Templates
 import subprocess
 import logging
 import time
-from typing import List
 import threading
+from fastapi import FastAPI, Form, Request
+from fastapi.responses import HTMLResponse, StreamingResponse
+from fastapi.templating import Jinja2Templates
 import os
 
 # Set up logging to print to the console and save to a file
@@ -40,6 +39,7 @@ stored_numbers = []
 stored_message = ""
 current_number = ""  # Global variable to track the current phone number being processed
 global_delay = 0  # Renamed global variable to track delay between messages
+linked_number = "+971551494508"  # Set your linked number here
 
 # Lock to prevent concurrent access to signal-cli
 signal_cli_lock = threading.Lock()
@@ -47,8 +47,8 @@ signal_cli_lock = threading.Lock()
 def send_message_via_signal_cli(phone_number: str, message: str):
     try:
         with signal_cli_lock:
-            # Updated the path for macOS signal-cli executable
-            command = f'/usr/local/bin/signal-cli/bin/signal-cli -u +971508078631 send {phone_number} -m "{message}"'
+            # Use signal-cli without the full path, assuming it's in the system's PATH
+            command = f'signal-cli -u {linked_number} send {phone_number} -m "{message}"'
             logger.info(f"Executing command: {command}")
             result = subprocess.run(command, capture_output=True, text=True, shell=True)
 
@@ -138,8 +138,8 @@ def poll_for_incoming_messages():
     while True:
         try:
             with signal_cli_lock:
-                # Updated the path for macOS signal-cli executable
-                command = '/usr/local/bin/signal-cli/bin/signal-cli -u +971508078631 receive'
+                # Use signal-cli without the full path, assuming it's in the system's PATH
+                command = f'signal-cli -u {linked_number} receive'
                 result = subprocess.run(command, capture_output=True, text=True, shell=True)
                 if result.returncode == 0:
                     logger.info("Successfully polled for incoming messages.")
