@@ -879,3 +879,329 @@ operable program or batch file.
 2025-01-26 12:23:07,081 - INFO - Successfully polled for incoming messages.
 2025-01-26 12:23:32,268 - INFO - Successfully polled for incoming messages.
 2025-01-26 12:23:54,969 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:24:56,621 - INFO - Starting the FastAPI application...
+2025-01-26 12:25:16,021 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:25:50,180 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:26:22,747 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:26:48,543 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:26:48,545 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:27:05,960 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:27:24,748 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:27:24,750 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:27:32,979 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:27:32,980 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:27:42,745 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:27:53,564 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:27:53,566 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:28:01,103 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:28:01,103 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:28:09,978 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:28:22,535 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:28:22,535 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:28:33,898 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:28:45,435 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:28:45,436 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:28:54,146 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:28:54,146 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:29:02,006 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:29:14,400 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:29:14,401 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:29:22,968 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:29:22,975 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:29:31,446 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:29:42,246 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:29:42,248 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:29:50,915 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:29:50,917 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:29:59,188 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:30:09,740 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:30:09,742 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:30:18,113 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:30:18,115 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:30:25,830 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:30:36,535 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:30:36,535 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:30:44,414 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:30:44,414 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:30:52,095 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:31:03,225 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:31:03,227 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:31:11,921 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:31:11,923 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:31:19,296 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:31:30,771 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:31:30,771 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:31:38,868 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:31:38,870 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:31:46,727 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:31:57,304 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:31:57,306 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:32:05,792 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:32:05,793 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:32:14,039 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:32:24,726 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:32:24,729 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:32:32,985 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:32:32,987 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:32:40,760 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:32:40,762 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:32:49,170 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:33:00,703 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:33:00,704 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:33:08,427 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:33:08,429 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:33:16,707 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:33:27,559 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:33:27,562 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:33:35,147 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:33:35,149 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:33:44,229 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:33:54,746 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:33:54,748 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:34:02,227 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:34:02,227 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:34:10,270 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:34:21,251 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:34:21,252 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:34:28,941 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:34:28,943 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:34:37,151 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:34:37,154 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:34:45,160 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:34:55,677 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:34:55,678 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:35:03,766 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:35:03,768 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:35:11,383 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:35:22,090 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:35:22,090 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:35:29,913 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:35:29,916 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:35:37,398 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:35:48,326 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:35:48,326 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:35:56,435 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:35:56,436 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:36:04,058 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:36:15,012 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:36:15,014 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:36:22,944 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:36:22,946 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:36:30,722 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:36:41,311 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:36:41,313 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:36:49,400 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:36:49,401 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:36:57,414 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:37:08,028 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:37:08,029 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:37:16,945 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:37:16,945 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:37:24,623 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:37:35,329 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:37:35,330 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:37:43,785 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:37:43,789 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:37:51,021 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:38:02,150 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:38:02,151 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:38:10,133 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:38:10,133 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:38:17,604 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:38:27,965 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:38:27,965 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:38:35,832 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:38:35,833 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:38:43,662 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:38:54,359 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:38:54,360 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:39:02,102 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:39:02,104 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:39:09,617 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:39:20,438 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:39:20,441 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:39:28,637 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:39:28,637 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:39:36,030 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:39:47,174 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:39:47,177 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:39:55,333 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:39:55,334 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:40:02,844 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:40:02,844 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:40:11,291 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:40:11,292 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:40:18,808 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:40:30,018 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:40:30,018 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:40:37,800 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:40:37,816 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:40:45,460 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:40:56,290 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:40:56,292 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:41:04,232 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:41:04,232 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:41:11,479 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:41:22,294 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:41:22,295 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:41:30,628 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:41:30,631 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:41:38,059 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:41:49,198 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:41:49,198 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:41:58,090 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:41:58,091 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:42:05,873 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:42:17,032 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:42:17,033 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:42:25,420 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:42:25,422 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:42:33,039 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:42:43,456 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:42:43,458 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:42:52,422 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:42:52,423 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:43:00,341 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:43:11,078 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:43:11,079 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:43:19,175 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:43:19,177 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:43:26,733 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:43:37,436 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:43:37,436 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:43:45,520 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:43:45,520 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:43:53,209 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:44:04,318 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:44:04,321 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:44:12,424 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:44:12,425 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:44:20,248 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:44:31,337 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:44:31,337 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:44:39,439 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:44:39,440 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:44:46,955 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:44:57,560 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:44:57,562 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:45:05,663 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:45:05,663 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:45:13,914 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:45:24,639 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:45:24,641 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:45:32,491 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:45:32,494 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:45:40,324 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:45:51,020 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:45:51,021 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:45:59,429 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:45:59,430 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:46:06,746 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:46:17,419 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:46:17,421 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:46:25,521 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:46:25,523 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:46:32,823 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:46:43,518 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:46:43,520 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 12:46:51,181 - INFO - Message sent successfully to +971551494508
+2025-01-26 12:46:51,183 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 12:46:59,304 - INFO - Message sent successfully to +971502171880
+2025-01-26 12:47:10,090 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:47:30,358 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:47:50,480 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:48:10,638 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:48:30,861 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:48:50,878 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:49:11,232 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:49:31,288 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:49:51,329 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:50:11,506 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:50:31,497 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:50:51,517 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:51:11,867 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:51:32,043 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:51:52,583 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:52:12,806 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:52:32,916 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:52:52,996 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:53:13,330 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:53:33,529 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:53:53,680 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:54:14,252 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:54:34,358 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:54:54,531 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:55:14,798 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:55:34,903 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:55:54,991 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:56:15,874 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:56:36,395 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:56:56,568 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:57:16,860 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:57:37,447 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:57:57,595 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:58:17,811 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:58:38,002 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:58:58,138 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:59:18,181 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:59:38,446 - INFO - Successfully polled for incoming messages.
+2025-01-26 12:59:58,695 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:00:18,754 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:00:39,090 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:00:59,053 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:01:18,934 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:01:39,330 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:01:59,345 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:02:19,260 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:02:39,435 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:02:59,505 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:03:19,758 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:03:39,955 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:03:59,980 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:04:19,913 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:04:40,145 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:05:00,296 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:05:20,487 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:05:40,816 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:06:01,192 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:06:20,991 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:06:41,120 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:07:01,317 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:07:21,399 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:07:41,908 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:08:02,155 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:08:23,011 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:08:43,013 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:09:03,101 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:09:23,022 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:09:42,966 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:10:03,135 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:10:23,225 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:10:43,288 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:11:03,233 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:11:23,225 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:11:43,250 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:12:03,546 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:12:23,896 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:12:44,391 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:13:04,575 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:13:24,601 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:13:44,655 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:14:04,682 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:14:24,733 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:14:45,110 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:15:05,131 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:15:29,966 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:15:49,998 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:16:10,355 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:16:31,521 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:17:04,487 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:17:30,400 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:17:57,171 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:17:57,171 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 13:18:12,614 - INFO - Message sent successfully to +971551494508
+2025-01-26 13:18:28,614 - INFO - Successfully polled for incoming messages.
+2025-01-26 13:18:28,614 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971502171880 --message-from-stdin
+2025-01-26 13:18:37,934 - INFO - Message sent successfully to +971502171880
+2025-01-26 13:18:37,934 - INFO - Stopping message sending. Finalizing status for +971551494508.
+2025-01-26 13:18:53,313 - INFO - Successfully polled for incoming messages.
