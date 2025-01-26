@@ -198,6 +198,10 @@
         document.getElementById("sendButton").disabled = true;
         document.getElementById("stopButton").disabled = false;
 
+        // Clear the results table
+        const tableBody = document.getElementById("results").getElementsByTagName('tbody')[0];
+        tableBody.innerHTML = '';
+
         // Send the form data to the server
         const response = await fetch('/send-sms', {
             method: 'POST',
@@ -222,6 +226,8 @@
                     cell1.innerHTML = number;
                     cell2.innerHTML = status;
                     cell3.innerHTML = details;
+                    // Update status immediately after sending each message
+                    updateStatus();
                 }
             };
 

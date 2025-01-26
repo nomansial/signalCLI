@@ -111,12 +111,15 @@ async def stop_sms():
         return HTMLResponse(content="No SMS sending process is active.", status_code=400)
 
     stop_event.set()
+    event_source.put("event: close")
     return HTMLResponse(content="SMS sending stopped.", status_code=200)
 
 @app.get("/send-sms-stream")
 async def stream_sms_results():
     def event_generator():
         while sending_active and not stop_event.is_set():
+            while not event_source.queue.empty():
+                yield f"data: {event_source.queue.get()}\n\n"
             time.sleep(1)  # Small sleep to prevent excessive CPU usage
         while not event_source.queue.empty():
             yield f"data: {event_source.queue.get()}\n\n"
@@ -168,4 +171,3 @@ if __name__ == "__main__":
 
     logger.info("Starting the FastAPI application...")
     uvicorn.run(app, host="0.0.0.0", port=8000)
-
