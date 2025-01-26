@@ -39,16 +39,26 @@ stored_numbers = []
 stored_message = ""
 current_number = ""  # Global variable to track the current phone number being processed
 global_delay = 0  # Renamed global variable to track delay between messages
-linked_number = "+971551494508"  # Set your linked number here
+linked_number = "+971508078631"  # Set your linked number here
 
 # Lock to prevent concurrent access to signal-cli
 signal_cli_lock = threading.Lock()
 
+def remove_non_ascii_characters(text):
+    return ''.join(char for char in text if ord(char) < 128)
+
 def send_message_via_signal_cli(phone_number: str, message: str):
     try:
         with signal_cli_lock:
+            # Remove non-ASCII characters
+            message = remove_non_ascii_characters(message)
+
+            # Write the message to a temporary file with UTF-8 encoding
+            with open("message.txt", "w", encoding="utf-8") as f:
+                f.write(message)
+
             # Use signal-cli without the full path, assuming it's in the system's PATH
-            command = f'signal-cli -u {linked_number} send {phone_number} -m "{message}"'
+            command = f'type message.txt | signal-cli -u {linked_number} send {phone_number} --message-from-stdin'
             logger.info(f"Executing command: {command}")
             result = subprocess.run(command, capture_output=True, text=True, shell=True)
 
@@ -158,3 +168,4 @@ if __name__ == "__main__":
 
     logger.info("Starting the FastAPI application...")
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
