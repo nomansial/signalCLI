@@ -1205,3 +1205,311 @@ operable program or batch file.
 2025-01-26 13:18:37,934 - INFO - Message sent successfully to +971502171880
 2025-01-26 13:18:37,934 - INFO - Stopping message sending. Finalizing status for +971551494508.
 2025-01-26 13:18:53,313 - INFO - Successfully polled for incoming messages.
+2025-01-26 14:21:55,758 - INFO - Starting the FastAPI application...
+2025-01-26 14:22:13,825 - INFO - Successfully polled for incoming messages.
+2025-01-26 14:22:46,741 - INFO - Successfully polled for incoming messages.
+2025-01-26 14:23:09,259 - INFO - Successfully polled for incoming messages.
+2025-01-26 14:23:36,550 - INFO - Successfully polled for incoming messages.
+2025-01-26 14:23:56,759 - INFO - Successfully polled for incoming messages.
+2025-01-26 14:24:19,307 - INFO - Successfully polled for incoming messages.
+2025-01-26 14:24:44,365 - INFO - Successfully polled for incoming messages.
+2025-01-26 14:25:41,584 - INFO - Starting the FastAPI application...
+2025-01-26 14:25:56,770 - INFO - Successfully polled for incoming messages.
+2025-01-26 14:26:24,543 - INFO - Successfully polled for incoming messages.
+2025-01-26 14:26:24,544 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19545312513 --message-from-stdin
+2025-01-26 14:26:32,681 - ERROR - Failed to send message to +19545312513. Error: Failed to send message due to rate limiting
+2025-01-26 14:26:32,682 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19545416210 --message-from-stdin
+2025-01-26 14:26:41,399 - ERROR - Failed to send message to +19545416210. Error: Failed to send message due to rate limiting
+2025-01-26 14:26:52,127 - INFO - Successfully polled for incoming messages.
+2025-01-26 14:26:52,129 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19545523042 --message-from-stdin
+2025-01-26 14:27:08,048 - ERROR - Failed to send message to +19545523042. Error: Failed to send message due to rate limiting
+2025-01-26 14:27:21,678 - INFO - Successfully polled for incoming messages.
+2025-01-26 14:27:21,679 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19545540187 --message-from-stdin
+2025-01-26 14:27:37,814 - ERROR - Failed to send message to +19545540187. Error: Failed to send message due to rate limiting
+2025-01-26 14:27:37,814 - INFO - Stopping message sending. Finalizing status for +19545930752.
+2025-01-26 14:28:45,385 - INFO - Starting the FastAPI application...
+2025-01-26 14:29:06,407 - INFO - Successfully polled for incoming messages.
+2025-01-26 14:29:30,165 - INFO - Successfully polled for incoming messages.
+2025-01-26 14:29:37,345 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +971551494508 --message-from-stdin
+2025-01-26 14:29:48,190 - INFO - Message sent successfully to +971551494508
+2025-01-26 14:31:29,761 - INFO - Starting the FastAPI application...
+2025-01-26 14:31:43,324 - INFO - Successfully polled for incoming messages.
+2025-01-26 14:31:51,816 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +19545312513 --message-from-stdin
+2025-01-26 14:32:01,654 - ERROR - Failed to send message to +19545312513. Error: Failed to send message
+2025-01-26 14:32:01,655 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +19545416210 --message-from-stdin
+2025-01-26 14:32:11,763 - INFO - Message sent successfully to +19545416210
+2025-01-26 14:32:23,510 - INFO - Successfully polled for incoming messages.
+2025-01-26 14:32:23,511 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +19545523042 --message-from-stdin
+2025-01-26 14:32:36,569 - INFO - Message sent successfully to +19545523042
+2025-01-26 14:32:49,420 - INFO - Successfully polled for incoming messages.
+2025-01-26 14:32:49,421 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +19545540187 --message-from-stdin
+2025-01-26 14:33:05,006 - INFO - Message sent successfully to +19545540187
+2025-01-26 14:33:29,742 - INFO - Successfully polled for incoming messages.
+2025-01-26 14:33:29,744 - INFO - Executing command: type message.txt | signal-cli -u +971508078631 send +19545930752 --message-from-stdin
+2025-01-26 14:34:08,669 - INFO - Message sent successfully to +19545930752
+2025-01-31 20:24:47,040 - INFO - Starting the FastAPI application...
+2025-01-31 20:25:00,687 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:25:22,672 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:25:22,676 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19545540187 --message-from-stdin
+2025-01-31 20:25:30,291 - INFO - Message sent successfully to +19545540187
+2025-01-31 20:25:42,163 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:25:42,164 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19545930752 --message-from-stdin
+2025-01-31 20:25:51,886 - ERROR - Failed to send message to +19545930752. Error: Failed to send message due to rate limiting
+2025-01-31 20:26:01,750 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:26:01,751 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19546016002 --message-from-stdin
+2025-01-31 20:26:13,518 - ERROR - Failed to send message to +19546016002. Error: Failed to send message due to rate limiting
+2025-01-31 20:26:24,713 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:26:24,714 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19546321723 --message-from-stdin
+2025-01-31 20:26:34,754 - ERROR - Failed to send message to +19546321723. Error: Failed to send message due to rate limiting
+2025-01-31 20:26:48,337 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:26:48,338 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19546443230 --message-from-stdin
+2025-01-31 20:26:58,442 - INFO - Message sent successfully to +19546443230
+2025-01-31 20:27:08,469 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:27:08,471 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19546471240 --message-from-stdin
+2025-01-31 20:27:18,054 - ERROR - Failed to send message to +19546471240. Error: Failed to send message due to rate limiting
+2025-01-31 20:27:27,988 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:27:27,989 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19546506477 --message-from-stdin
+2025-01-31 20:27:38,634 - ERROR - Failed to send message to +19546506477. Error: Failed to send message due to rate limiting
+2025-01-31 20:27:49,361 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:27:49,362 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19546638190 --message-from-stdin
+2025-01-31 20:27:59,677 - ERROR - Failed to send message to +19546638190. Error: Failed to send message due to rate limiting
+2025-01-31 20:28:11,442 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:28:11,443 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19546658519 --message-from-stdin
+2025-01-31 20:28:23,656 - ERROR - Failed to send message to +19546658519. Error: Failed to send message due to rate limiting
+2025-01-31 20:28:35,117 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:28:35,118 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19546995544 --message-from-stdin
+2025-01-31 20:28:45,175 - INFO - Message sent successfully to +19546995544
+2025-01-31 20:28:57,306 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:28:57,307 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19547071712 --message-from-stdin
+2025-01-31 20:29:11,260 - ERROR - Failed to send message to +19547071712. Error: Failed to send message due to rate limiting
+2025-01-31 20:29:23,751 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:29:23,752 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19547702608 --message-from-stdin
+2025-01-31 20:29:33,540 - ERROR - Failed to send message to +19547702608. Error: Failed to send message due to rate limiting
+2025-01-31 20:29:46,734 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:29:46,734 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19547754050 --message-from-stdin
+2025-01-31 20:29:57,777 - ERROR - Failed to send message to +19547754050. Error: Failed to send message due to rate limiting
+2025-01-31 20:30:08,973 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:30:08,974 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19547787016 --message-from-stdin
+2025-01-31 20:30:20,705 - ERROR - Failed to send message to +19547787016. Error: Failed to send message due to rate limiting
+2025-01-31 20:30:30,713 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:30:30,715 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19548172976 --message-from-stdin
+2025-01-31 20:30:40,891 - ERROR - Failed to send message to +19548172976. Error: Failed to send message due to rate limiting
+2025-01-31 20:30:52,041 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:30:52,042 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19548307305 --message-from-stdin
+2025-01-31 20:31:02,904 - ERROR - Failed to send message to +19548307305. Error: Failed to send message due to rate limiting
+2025-01-31 20:31:12,638 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:31:12,639 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19548504661 --message-from-stdin
+2025-01-31 20:31:22,733 - ERROR - Failed to send message to +19548504661. Error: Failed to send message due to rate limiting
+2025-01-31 20:31:33,067 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:31:33,067 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19548514549 --message-from-stdin
+2025-01-31 20:31:43,294 - ERROR - Failed to send message to +19548514549. Error: Failed to send message due to rate limiting
+2025-01-31 20:31:54,014 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:31:54,015 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19548548859 --message-from-stdin
+2025-01-31 20:32:05,049 - ERROR - Failed to send message to +19548548859. Error: Failed to send message due to rate limiting
+2025-01-31 20:32:17,936 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:32:17,937 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19548739552 --message-from-stdin
+2025-01-31 20:32:32,360 - ERROR - Failed to send message to +19548739552. Error: Failed to send message due to rate limiting
+2025-01-31 20:32:43,151 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:32:43,152 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19548807675 --message-from-stdin
+2025-01-31 20:32:55,766 - ERROR - Failed to send message to +19548807675. Error: Failed to send message due to rate limiting
+2025-01-31 20:33:05,757 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:33:05,757 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19548991184 --message-from-stdin
+2025-01-31 20:33:16,504 - ERROR - Failed to send message to +19548991184. Error: Failed to send message due to rate limiting
+2025-01-31 20:33:27,098 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:33:27,099 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19549130619 --message-from-stdin
+2025-01-31 20:33:41,021 - ERROR - Failed to send message to +19549130619. Error: Failed to send message due to rate limiting
+2025-01-31 20:33:51,519 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:33:51,520 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19549136294 --message-from-stdin
+2025-01-31 20:34:01,949 - ERROR - Failed to send message to +19549136294. Error: Failed to send message due to rate limiting
+2025-01-31 20:34:12,765 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:34:12,767 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19549808837 --message-from-stdin
+2025-01-31 20:34:23,031 - ERROR - Failed to send message to +19549808837. Error: Failed to send message due to rate limiting
+2025-01-31 20:34:34,121 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:34:34,122 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19562434516 --message-from-stdin
+2025-01-31 20:34:43,957 - ERROR - Failed to send message to +19562434516. Error: Failed to send message due to rate limiting
+2025-01-31 20:34:53,952 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:34:53,954 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19563714671 --message-from-stdin
+2025-01-31 20:35:07,665 - ERROR - Failed to send message to +19563714671. Error: Failed to send message due to rate limiting
+2025-01-31 20:35:17,787 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:35:17,787 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19563760759 --message-from-stdin
+2025-01-31 20:35:27,315 - ERROR - Failed to send message to +19563760759. Error: Failed to send message due to rate limiting
+2025-01-31 20:35:38,421 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:35:38,422 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19564080719 --message-from-stdin
+2025-01-31 20:35:49,152 - ERROR - Failed to send message to +19564080719. Error: Failed to send message due to rate limiting
+2025-01-31 20:35:59,181 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:35:59,181 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19565189555 --message-from-stdin
+2025-01-31 20:36:09,053 - ERROR - Failed to send message to +19565189555. Error: Failed to send message due to rate limiting
+2025-01-31 20:36:19,923 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:36:19,923 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19565660002 --message-from-stdin
+2025-01-31 20:36:29,742 - ERROR - Failed to send message to +19565660002. Error: Failed to send message due to rate limiting
+2025-01-31 20:36:40,027 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:36:40,028 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19566394568 --message-from-stdin
+2025-01-31 20:36:50,280 - ERROR - Failed to send message to +19566394568. Error: Failed to send message due to rate limiting
+2025-01-31 20:37:00,378 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:37:00,379 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19566394681 --message-from-stdin
+2025-01-31 20:37:09,949 - ERROR - Failed to send message to +19566394681. Error: Failed to send message due to rate limiting
+2025-01-31 20:37:20,715 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:37:20,717 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19566397792 --message-from-stdin
+2025-01-31 20:37:30,426 - ERROR - Failed to send message to +19566397792. Error: Failed to send message due to rate limiting
+2025-01-31 20:37:40,515 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:37:40,516 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19567782361 --message-from-stdin
+2025-01-31 20:37:50,472 - ERROR - Failed to send message to +19567782361. Error: Failed to send message due to rate limiting
+2025-01-31 20:38:00,564 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:38:00,565 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19568324160 --message-from-stdin
+2025-01-31 20:38:10,672 - ERROR - Failed to send message to +19568324160. Error: Failed to send message due to rate limiting
+2025-01-31 20:38:21,047 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:38:21,047 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19702152060 --message-from-stdin
+2025-01-31 20:38:30,677 - ERROR - Failed to send message to +19702152060. Error: Failed to send message due to rate limiting
+2025-01-31 20:38:41,106 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:39:00,923 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:39:21,057 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:39:41,217 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:40:01,298 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:40:21,127 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:40:43,051 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:41:03,048 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:41:22,829 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:41:42,528 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:42:02,327 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:42:22,144 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:42:42,312 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:43:02,643 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:43:22,714 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:43:43,415 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:44:04,257 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:44:27,300 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:44:47,411 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:45:07,795 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:45:28,478 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:45:49,015 - INFO - Successfully polled for incoming messages.
+2025-01-31 20:46:09,918 - INFO - Successfully polled for incoming messages.
+2025-01-31 21:13:22,528 - INFO - Starting the FastAPI application...
+2025-01-31 21:15:01,914 - INFO - Starting the FastAPI application...
+2025-01-31 21:17:38,303 - INFO - Starting FastAPI application...
+2025-01-31 21:17:51,670 - INFO - Successfully polled for incoming messages.
+2025-01-31 21:18:13,706 - INFO - Successfully polled for incoming messages.
+2025-01-31 21:18:34,144 - INFO - Successfully polled for incoming messages.
+2025-01-31 21:18:57,696 - INFO - Successfully polled for incoming messages.
+2025-01-31 21:18:57,696 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19545312513 --message-from-stdin
+2025-01-31 21:19:06,628 - INFO - Message sent successfully to +19545312513
+2025-01-31 21:19:06,629 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19545416210 --message-from-stdin
+2025-01-31 21:19:13,259 - ERROR - Failed to send message to +19545416210. Error: Failed to send message due to rate limiting
+2025-01-31 21:19:24,428 - INFO - Successfully polled for incoming messages.
+2025-01-31 21:19:24,429 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19545523042 --message-from-stdin
+2025-01-31 21:19:32,153 - ERROR - Failed to send message to +19545523042. Error: Failed to send message due to rate limiting
+2025-01-31 21:19:32,154 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19545540187 --message-from-stdin
+2025-01-31 21:19:39,237 - ERROR - Failed to send message to +19545540187. Error: Failed to send message due to rate limiting
+2025-01-31 21:23:26,273 - INFO - Starting the FastAPI application...
+2025-01-31 21:23:38,940 - INFO - Successfully polled for incoming messages.
+2025-01-31 21:24:01,343 - INFO - Successfully polled for incoming messages.
+2025-01-31 21:24:01,353 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19545930752 --message-from-stdin
+2025-01-31 21:24:10,256 - ERROR - Failed to send message to +19545930752. Error: Failed to send message due to rate limiting
+2025-01-31 21:24:11,260 - ERROR - Failed to create captcha task. Response: {'errorId': 10, 'errorCode': 'ERROR_ZERO_BALANCE', 'errorDescription': 'Account has zero or negative balance'}
+2025-01-31 21:24:11,261 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19546016002 --message-from-stdin
+2025-01-31 21:24:18,222 - ERROR - Failed to send message to +19546016002. Error: Failed to send message due to rate limiting
+2025-01-31 21:24:18,938 - ERROR - Failed to create captcha task. Response: {'errorId': 10, 'errorCode': 'ERROR_ZERO_BALANCE', 'errorDescription': 'Account has zero or negative balance'}
+2025-01-31 21:24:18,941 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19546321723 --message-from-stdin
+2025-01-31 21:24:26,266 - ERROR - Failed to send message to +19546321723. Error: Failed to send message due to rate limiting
+2025-01-31 21:24:26,981 - ERROR - Failed to create captcha task. Response: {'errorId': 10, 'errorCode': 'ERROR_ZERO_BALANCE', 'errorDescription': 'Account has zero or negative balance'}
+2025-01-31 21:24:38,343 - INFO - Successfully polled for incoming messages.
+2025-01-31 21:24:38,344 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19546443230 --message-from-stdin
+2025-01-31 21:24:47,636 - ERROR - Failed to send message to +19546443230. Error: Failed to send message due to rate limiting
+2025-01-31 21:24:48,411 - ERROR - Failed to create captcha task. Response: {'errorId': 10, 'errorCode': 'ERROR_ZERO_BALANCE', 'errorDescription': 'Account has zero or negative balance'}
+2025-01-31 21:24:48,414 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19546471240 --message-from-stdin
+2025-01-31 21:24:56,524 - ERROR - Failed to send message to +19546471240. Error: 
+2025-01-31 21:25:07,878 - INFO - Successfully polled for incoming messages.
+2025-01-31 21:25:07,880 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19546506477 --message-from-stdin
+2025-01-31 21:25:17,679 - ERROR - Failed to send message to +19546506477. Error: Failed to send message due to rate limiting
+2025-01-31 21:25:18,442 - ERROR - Failed to create captcha task. Response: {'errorId': 10, 'errorCode': 'ERROR_ZERO_BALANCE', 'errorDescription': 'Account has zero or negative balance'}
+2025-01-31 21:25:30,496 - INFO - Successfully polled for incoming messages.
+2025-01-31 21:25:30,497 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19546638190 --message-from-stdin
+2025-01-31 21:25:40,108 - ERROR - Failed to send message to +19546638190. Error: Failed to send message due to rate limiting
+2025-01-31 21:25:40,798 - ERROR - Failed to create captcha task. Response: {'errorId': 10, 'errorCode': 'ERROR_ZERO_BALANCE', 'errorDescription': 'Account has zero or negative balance'}
+2025-01-31 21:25:52,395 - INFO - Successfully polled for incoming messages.
+2025-01-31 21:25:52,396 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19546658519 --message-from-stdin
+2025-01-31 21:26:00,920 - ERROR - Failed to send message to +19546658519. Error: Failed to send message due to rate limiting
+2025-01-31 21:26:01,636 - ERROR - Failed to create captcha task. Response: {'errorId': 10, 'errorCode': 'ERROR_ZERO_BALANCE', 'errorDescription': 'Account has zero or negative balance'}
+2025-01-31 21:26:01,639 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19546995544 --message-from-stdin
+2025-01-31 21:26:10,293 - ERROR - Failed to send message to +19546995544. Error: Failed to send message due to rate limiting
+2025-01-31 21:26:10,981 - ERROR - Failed to create captcha task. Response: {'errorId': 10, 'errorCode': 'ERROR_ZERO_BALANCE', 'errorDescription': 'Account has zero or negative balance'}
+2025-01-31 21:26:22,581 - INFO - Successfully polled for incoming messages.
+2025-01-31 21:26:22,582 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19547071712 --message-from-stdin
+2025-01-31 21:26:30,391 - ERROR - Failed to send message to +19547071712. Error: Failed to send message due to rate limiting
+2025-01-31 21:26:31,073 - ERROR - Failed to create captcha task. Response: {'errorId': 10, 'errorCode': 'ERROR_ZERO_BALANCE', 'errorDescription': 'Account has zero or negative balance'}
+2025-01-31 21:26:31,075 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19547702608 --message-from-stdin
+2025-01-31 21:26:38,572 - ERROR - Failed to send message to +19547702608. Error: Failed to send message due to rate limiting
+2025-01-31 21:26:39,274 - ERROR - Failed to create captcha task. Response: {'errorId': 10, 'errorCode': 'ERROR_ZERO_BALANCE', 'errorDescription': 'Account has zero or negative balance'}
+2025-01-31 21:26:49,865 - INFO - Successfully polled for incoming messages.
+2025-01-31 21:26:49,866 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19547754050 --message-from-stdin
+2025-01-31 21:26:57,312 - ERROR - Failed to send message to +19547754050. Error: Failed to send message due to rate limiting
+2025-01-31 21:26:58,002 - ERROR - Failed to create captcha task. Response: {'errorId': 10, 'errorCode': 'ERROR_ZERO_BALANCE', 'errorDescription': 'Account has zero or negative balance'}
+2025-01-31 21:26:58,005 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19547787016 --message-from-stdin
+2025-01-31 21:27:06,488 - ERROR - Failed to send message to +19547787016. Error: Failed to send message due to rate limiting
+2025-01-31 21:27:07,226 - ERROR - Failed to create captcha task. Response: {'errorId': 10, 'errorCode': 'ERROR_ZERO_BALANCE', 'errorDescription': 'Account has zero or negative balance'}
+2025-01-31 21:27:07,227 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19548172976 --message-from-stdin
+2025-01-31 21:27:15,535 - ERROR - Failed to send message to +19548172976. Error: Failed to send message due to rate limiting
+2025-01-31 21:34:56,217 - INFO - Starting the FastAPI application...
+2025-01-31 21:35:12,991 - INFO - Successfully polled for incoming messages.
+2025-01-31 21:35:35,584 - INFO - Successfully polled for incoming messages.
+2025-01-31 21:35:40,650 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19547754050 --message-from-stdin
+2025-01-31 21:35:49,672 - ERROR - Failed to send message to +19547754050. Error: Failed to send message due to rate limiting
+2025-01-31 21:35:50,629 - ERROR - Failed to create captcha task. Response: {'errorId': 24, 'errorCode': 'ERROR_INCORRECT_SESSION_DATA', 'errorDescription': "Some of the required values for successive user emulation are missing. . Website key 'your-site-key' is invalid."}
+2025-01-31 21:39:09,947 - INFO - Starting the FastAPI application...
+2025-01-31 21:39:27,644 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19547754050 --message-from-stdin
+2025-01-31 21:39:37,590 - ERROR - Failed to send message to +19547754050. Error: Failed to send message due to rate limiting
+2025-01-31 21:39:38,331 - ERROR - Failed to create captcha task. Response: {'errorId': 10, 'errorCode': 'ERROR_ZERO_BALANCE', 'errorDescription': 'Account has zero or negative balance'}
+2025-01-31 21:39:38,332 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19547787016 --message-from-stdin
+2025-01-31 21:39:42,312 - ERROR - Failed to send message to +19547787016. Error: 
+2025-01-31 21:39:47,316 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19547787016 --message-from-stdin
+2025-01-31 21:39:54,616 - ERROR - Failed to send message to +19547787016. Error: Failed to send message due to rate limiting
+2025-01-31 21:39:55,307 - ERROR - Failed to create captcha task. Response: {'errorId': 10, 'errorCode': 'ERROR_ZERO_BALANCE', 'errorDescription': 'Account has zero or negative balance'}
+2025-01-31 21:39:55,310 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19548172976 --message-from-stdin
+2025-01-31 21:40:02,040 - ERROR - Failed to send message to +19548172976. Error: Failed to send message due to rate limiting
+2025-01-31 21:40:02,730 - ERROR - Failed to create captcha task. Response: {'errorId': 10, 'errorCode': 'ERROR_ZERO_BALANCE', 'errorDescription': 'Account has zero or negative balance'}
+2025-01-31 21:40:02,734 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19548307305 --message-from-stdin
+2025-02-01 11:23:48,363 - INFO - Starting the FastAPI application...
+2025-02-01 11:26:01,920 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19567782361 --message-from-stdin
+2025-02-01 11:26:16,695 - ERROR - Failed to send message to +19567782361. Error: Failed to send message due to rate limiting
+2025-02-01 11:26:18,506 - INFO - Captcha task created with ID: 272838410
+2025-02-01 11:50:55,942 - INFO - Starting the FastAPI application...
+2025-02-01 11:51:10,458 - INFO - Successfully polled for incoming messages.
+2025-02-01 11:55:30,208 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19545312513 --message-from-stdin
+2025-02-01 11:55:38,659 - ERROR - Failed to send to +19545312513. Error: Failed to send message due to rate limiting
+2025-02-01 11:55:40,324 - INFO - Captcha task created: 415166490
+2025-02-01 11:57:57,154 - INFO - Starting the FastAPI application...
+2025-02-01 11:58:15,515 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19545312513 --message-from-stdin
+2025-02-01 11:58:25,553 - ERROR - Failed to send message to +19545312513. Error: Failed to send message due to rate limiting
+2025-02-01 11:58:27,020 - INFO - Captcha task created with ID: 308506430
+2025-02-01 11:58:38,484 - INFO - Captcha solved successfully. Token: 03AFcWeA5jVBYBYny8VkoC0yRzQ99wKay8TsxjjZcD1KIR9D33KUMKW1tg7K-BgxJh5xiR2pfu_OcY-sAX9kYi-OzZCEwsooWmlMWYNUQfmg0nafMj5mAc30ZjvTST7uqej0fa3ZfJ1tZbRl3HVPw2Bbeuw7-XTMMQ2bHycy6pBiTg6MD03DANUAIQ4ujLZc15fYpoBRQTsSDH3Xg4zlaiQHJ1SnuHynDRjneSXUnAVLT5diUXpqOCJOoY8ZpKdZwLO4DQ_Hne_dTh6Gdj4YL96gIHwXdwCF64N03DcMTzU3OraCuV3c-MW3pAjnI52ji0mN0bgGHPKdKnhmPZ6MQKYWzIRyCMfUh3c_3B28KD9k0Thi9Lv3V9gqS6V5EvwCtWaazHEA8NpodsfIABm8XjpmYsrcJyqLf5LPU9gsU1gDcoqOHbRWFKyiOw-ELAxFe2ffxJpzEoJjpsBoOSzbubN5OeCyQOTIRpwUQal9IWFC2R5Hgl4KFckDE5rTTYQXFglRQITyOfqL5Itv00pgBT3982X1ofgHsmtjMZs3UBmkxf87QRz4SLsD65vWUFM3mGSgtekdWcOsg66nPQSOHgNGcgrYq0x_EJW_KX72skL13S2CwoiSNuf8kmn--ek_fywgDFnMYMzXEF9wXtNFUly0DdzKfmE78081MQXb2Ham62sokF5zMPKn8DAJ7X1Em3VMz3L-h204HA02xUonXLBccpS3S-ePYTbFrp7CxMYzsxFBoyOZu9kX8zY0GwefRdkIetdmeCWqfjHbUt8g9CxSRFRK3T_ePZJw2wDQLaYLAbg4DMTMVi3kL-j56a8IJZG969zxq9k8huu15B-GEVWvQkPIuYG-Ead67UdWIAptYE2GwL25MsonDY8YpmC5Cq9q1RjRKKqSJ77MNBNFmtaGX0pEhJYj-5o7ZiX8qJybfgmlhbHmYDHso3NPWRJp8NDm2dAxr81mWilWLjr4pJ5ooFXSQZTsmjtMlqStQhcwzteG5eazjPpYJqtF46DbUnBL1wNOb4e_bSEqzMx4GMsk-SOGmMaUavQOFW-jcMEBdsVZjREgFbH4O1iLLbW9X9_cz75SGP3uLNBn8ft0f4V4bcYAOpSEijVmSs_UBsWZEm_RwwF0ja8ydBpSqml9dbqjQ4RtO9w89-5dylDltp9zwd73HQSs5w8y6JTc8mVbgq71b1TdNwfMkG1_DLtQHaG7tLjmffjKINRqfgVo07aNLP3o6k1oGTBTRJnMU4RWbC-rQoY4A1LlqQPhpYJ54q7vAUkGjFOVVUgJGhyvbGGEKruS11cX2saOSDeeNyNn5rJqb4dypqekYn8i1jdrfPioYpBZdRfgedG-xUrbX8xd99U_prH3xap07WAwe4maOtb0UwqUUFvM8iWCxZrZJKgp9pjpMp6DcajFes-3MDZAoCW9xfnPgOHcB8J7lOJ8DBJF-S5mW_IzZ9p4aY3S1IfO2Gnn9hKLc5paHW7VioP5z6PdOcoF8j3CDdT0rUL_KI01QpVmlpcAt5EI4IMwR3ZJLRa5k9PKEGIV96fCqSo93t39riFRjncHIYY3vFpfneShF72ulpHYZqwgrNyg4GM_pQZnL79nS72FTYnZYH_ldmpSDD7rIHYR1BACE7qYpmU-2Lwnwfgutb5nIWUfAO6gaSN4iIFX1SgLyDwZwG4H1B5Y14aigBc6h-Eh8x4-_ovgHiBxODzSor2ZFdgUezY62rC1dhROr4wL_GZSqTp3Lwmxtz88wAX55wHqACiGetFmFgPXoJc9ZAwg7GiE5u31iJJvOxngTlTzEBfAbJZqiEuDseUCLQ8_34mfWQcXEWwHfAV6tx_oiqJdQ_WtbKgdKkzRxNPH5KpqJnJwWYP9LQThTNtUB_V4x4uax_plNyzsi9mfZbfox-YOrrf1qCazA5VvZvGvebtL-JkekBkQVGW61pPFZSnNSE402hJuTqKTwmHFypv-cNLnQ4qOmyNb-jQGRxa7NlqF54bkj7QhIuwRIaqcdzvImxPhIff3HnNUiknDtvuVVprAky_ZK8xcEZcOXtd-Dj0DuJ8cy6DM0YTCCAcDaOmrJ3BwwFubSjAkvfri4XlooHjcv0Xhw6_mAkUIh4tLUxVmAwGagVB0efTGRQ6Wym6TZtyv4kDk2T2B9bmYMktft7ff77vUPQdCqDkPqEHlGn9bZsI8kdPmc4KjhRZNldvoVj4miBmo2lUSmDInkJKesgfnCtpvltTbtwWuQGKqNcaogPW6jAolmjOTiqzotBT_HwSB1UYfBJIWkmBbizDkw
+2025-02-01 11:58:38,486 - INFO - Executing challenge command: signal-cli -a +85265091684 submitRateLimitChallenge --challenge 5fad97ac-7d06-4e44-b18a-b950b20148ff --captcha 03AFcWeA5jVBYBYny8VkoC0yRzQ99wKay8TsxjjZcD1KIR9D33KUMKW1tg7K-BgxJh5xiR2pfu_OcY-sAX9kYi-OzZCEwsooWmlMWYNUQfmg0nafMj5mAc30ZjvTST7uqej0fa3ZfJ1tZbRl3HVPw2Bbeuw7-XTMMQ2bHycy6pBiTg6MD03DANUAIQ4ujLZc15fYpoBRQTsSDH3Xg4zlaiQHJ1SnuHynDRjneSXUnAVLT5diUXpqOCJOoY8ZpKdZwLO4DQ_Hne_dTh6Gdj4YL96gIHwXdwCF64N03DcMTzU3OraCuV3c-MW3pAjnI52ji0mN0bgGHPKdKnhmPZ6MQKYWzIRyCMfUh3c_3B28KD9k0Thi9Lv3V9gqS6V5EvwCtWaazHEA8NpodsfIABm8XjpmYsrcJyqLf5LPU9gsU1gDcoqOHbRWFKyiOw-ELAxFe2ffxJpzEoJjpsBoOSzbubN5OeCyQOTIRpwUQal9IWFC2R5Hgl4KFckDE5rTTYQXFglRQITyOfqL5Itv00pgBT3982X1ofgHsmtjMZs3UBmkxf87QRz4SLsD65vWUFM3mGSgtekdWcOsg66nPQSOHgNGcgrYq0x_EJW_KX72skL13S2CwoiSNuf8kmn--ek_fywgDFnMYMzXEF9wXtNFUly0DdzKfmE78081MQXb2Ham62sokF5zMPKn8DAJ7X1Em3VMz3L-h204HA02xUonXLBccpS3S-ePYTbFrp7CxMYzsxFBoyOZu9kX8zY0GwefRdkIetdmeCWqfjHbUt8g9CxSRFRK3T_ePZJw2wDQLaYLAbg4DMTMVi3kL-j56a8IJZG969zxq9k8huu15B-GEVWvQkPIuYG-Ead67UdWIAptYE2GwL25MsonDY8YpmC5Cq9q1RjRKKqSJ77MNBNFmtaGX0pEhJYj-5o7ZiX8qJybfgmlhbHmYDHso3NPWRJp8NDm2dAxr81mWilWLjr4pJ5ooFXSQZTsmjtMlqStQhcwzteG5eazjPpYJqtF46DbUnBL1wNOb4e_bSEqzMx4GMsk-SOGmMaUavQOFW-jcMEBdsVZjREgFbH4O1iLLbW9X9_cz75SGP3uLNBn8ft0f4V4bcYAOpSEijVmSs_UBsWZEm_RwwF0ja8ydBpSqml9dbqjQ4RtO9w89-5dylDltp9zwd73HQSs5w8y6JTc8mVbgq71b1TdNwfMkG1_DLtQHaG7tLjmffjKINRqfgVo07aNLP3o6k1oGTBTRJnMU4RWbC-rQoY4A1LlqQPhpYJ54q7vAUkGjFOVVUgJGhyvbGGEKruS11cX2saOSDeeNyNn5rJqb4dypqekYn8i1jdrfPioYpBZdRfgedG-xUrbX8xd99U_prH3xap07WAwe4maOtb0UwqUUFvM8iWCxZrZJKgp9pjpMp6DcajFes-3MDZAoCW9xfnPgOHcB8J7lOJ8DBJF-S5mW_IzZ9p4aY3S1IfO2Gnn9hKLc5paHW7VioP5z6PdOcoF8j3CDdT0rUL_KI01QpVmlpcAt5EI4IMwR3ZJLRa5k9PKEGIV96fCqSo93t39riFRjncHIYY3vFpfneShF72ulpHYZqwgrNyg4GM_pQZnL79nS72FTYnZYH_ldmpSDD7rIHYR1BACE7qYpmU-2Lwnwfgutb5nIWUfAO6gaSN4iIFX1SgLyDwZwG4H1B5Y14aigBc6h-Eh8x4-_ovgHiBxODzSor2ZFdgUezY62rC1dhROr4wL_GZSqTp3Lwmxtz88wAX55wHqACiGetFmFgPXoJc9ZAwg7GiE5u31iJJvOxngTlTzEBfAbJZqiEuDseUCLQ8_34mfWQcXEWwHfAV6tx_oiqJdQ_WtbKgdKkzRxNPH5KpqJnJwWYP9LQThTNtUB_V4x4uax_plNyzsi9mfZbfox-YOrrf1qCazA5VvZvGvebtL-JkekBkQVGW61pPFZSnNSE402hJuTqKTwmHFypv-cNLnQ4qOmyNb-jQGRxa7NlqF54bkj7QhIuwRIaqcdzvImxPhIff3HnNUiknDtvuVVprAky_ZK8xcEZcOXtd-Dj0DuJ8cy6DM0YTCCAcDaOmrJ3BwwFubSjAkvfri4XlooHjcv0Xhw6_mAkUIh4tLUxVmAwGagVB0efTGRQ6Wym6TZtyv4kDk2T2B9bmYMktft7ff77vUPQdCqDkPqEHlGn9bZsI8kdPmc4KjhRZNldvoVj4miBmo2lUSmDInkJKesgfnCtpvltTbtwWuQGKqNcaogPW6jAolmjOTiqzotBT_HwSB1UYfBJIWkmBbizDkw
+2025-02-01 11:58:45,617 - ERROR - Failed to submit rate limit challenge. Error: Submit challenge error: [400] Bad response: 400 : {"code":400,"message":"too few parts"}
+2025-02-01 11:58:50,619 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19545312513 --message-from-stdin
+2025-02-01 11:58:51,501 - ERROR - Failed to send message to +19545312513. Error: 
+2025-02-01 11:58:56,503 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +19545312513 --message-from-stdin
+2025-02-01 11:59:04,094 - ERROR - Failed to send message to +19545312513. Error: Failed to send message due to rate limiting
+2025-02-01 11:59:05,516 - INFO - Captcha task created with ID: 439073742
+2025-02-01 12:22:56,678 - INFO - Starting the FastAPI application...
+2025-02-01 19:48:20,568 - INFO - Starting the FastAPI application...
+2025-02-01 19:48:34,832 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +923325278158 --message-from-stdin
+2025-02-01 19:48:46,684 - ERROR - Failed to send message to +923325278158. Error: Failed to send message
+2025-02-01 19:48:51,689 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +923325278158 --message-from-stdin
+2025-02-01 19:49:06,543 - ERROR - Failed to send message to +923325278158. Error: Failed to send message
+2025-02-01 19:49:11,547 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +923325278158 --message-from-stdin
+2025-02-01 19:49:26,631 - ERROR - Failed to send message to +923325278158. Error: Failed to send message
+2025-02-01 19:49:31,637 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +923325278158 --message-from-stdin
+2025-02-01 19:49:45,979 - ERROR - Failed to send message to +923325278158. Error: Failed to send message
+2025-02-01 19:49:50,980 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +923325278158 --message-from-stdin
+2025-02-01 19:50:01,814 - INFO - Starting the FastAPI application...
+2025-02-01 19:50:18,402 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +971551494508 --message-from-stdin
+2025-02-01 19:50:28,625 - ERROR - Failed to send message to +971551494508. Error: Failed to send message due to rate limiting
+2025-02-01 19:50:30,406 - INFO - Captcha task created with ID: 715541876
+2025-02-01 19:51:43,319 - INFO - Starting the FastAPI application...
+2025-02-01 19:51:47,740 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +971551494508 --message-from-stdin
+2025-02-01 19:51:57,741 - ERROR - Failed to send message to +971551494508. Error: Failed to send message due to rate limiting
+2025-02-01 19:51:59,232 - INFO - Captcha task created with ID: 342664068
+2025-02-01 19:52:10,741 - INFO - Captcha solved successfully. Token: 03AFcWeA7klLd94B7_ohQg8lAW355lRMMcVzbSA75Tr45NX_iussd15SD2PIDwq-hDbZs2D1vozZyB6UCk-McLLDDJbOtQcQo-UpoLBNi89eRrW5IVtI2lWn3EVFYXQXdwqj9OxQUxQ7Fd5IxljblIKsAvRHILqLaZrwlW4_ahPwccLIMsEPAuciaggPOgT59SOXy7F3_F5nk4L4yuPHWOUj6369yBDIBbLOZ9C7_T8aaG-p0pl-hH8gm073IOHSX4lf5FyhtuThtUI7dke6ja9o4zM2kLIoTUk5FUXhdbAvazT5nfTj4XKJozEHPxYX_MpsGYBdhlfUK5cwDId9LjKRmIFIbzdaCKFq5FUpn8PZxuvw8bVAOpzQHmqW31qhrYw702gSBdy5vpXmPxyMraBDED9J026G8L1DmOOqc7jz4tNpNjkR5-nwEWbK6uRWCuxjo2jPtJqKatHIKADOXFYX91xWZCub_Cslb9vPzh5BMnadUUeUYWrrn033Q44RflL29TK3p-dMbrHm_hA1-2N_nCEh2NdyKACQRYnJM6-dvfFZsojrIAgDbicKg0vi-1de9BIPsm60hdwq_wGUjKJw6bwaUDsV5ch8RyCkOrjb-m0tw1wBQNNBqlERvAnmj1bpgfye4iJH6b8GEmcF3pLTJkwXeRGktFvMur5ia5Gqa0CzjSqvlodmBV8xIBU47l6WpIc_Bkyj0Yr3mzkI4f1KYc4fZbkqj8l8fCqsbIQe9XH0KtNhuAdBgwnufHZQHtJKlGnWJKaa88XcJn8_Pub4FRTqMlRlIh4-Lhf4Jfsy6TTHTXEqh4j-4MVy_s5MTxZqXB62KT9_jYiDh4fTb_kBFfKjf54Rso2Qg9bXlqStGFGV1519-ZWjKEg0DLbZPdOJYhNK-24IdHYmuv4tT7jVR7HiJZondyEw7uqxtIWgGO-aSkz-GUU8v3RuNTB212jwgB3Fhsb3YLWqAhSzJyHV7k65MerS_4Upl_UVW1rpkrxKs5JW2L884riUHqUz6xIrBTRqxjo49CgfoFvf-2isqmHgnTKDZRhqBxtSxpAKikBTNOHEkEK0QGyWmSo2w1tz6tQJi1_U087aYoc7muJHbxlMJLdWZWL_n5bAXuqdjB-cfu_HngWFPPx_xxlKs9e28yvk4SIHHwR_H5wJ3WB8qfaENg06F2TiQZRVaO9rd_VP4L_xfjeuydjUqU7qplLr9xrp4_Jdiit9gbEQ0XDI4n7so_Mayk75WCSX2UflqsssE9-f722YIrpFxWK0QeHrzH5m0QXhEqiof4boM8ppGF7eDjl4DZoAfJbZWjwGr9Vuq4lWKlSsEIyHbTQssMJNejLvm6oPMOF1Tg6YXg_1XP-xauGGivDu8JEIE7Jhwd0aR5kLkI8ytHZ8i0avmUi9dbrxlTaSaCUQ55kt29iiqT4x_fWo4QGF9VCUFJ9sZb1vpW_Uh4b5EKGYp7Dko1a7TRxUNfMydd4xX-ysU69yXToUq9Jpdh6sdkr_H80FwgS_ZU6Z_mtYjIq_9Wt9Hs9wqA-8pVRfRjA5-hg6GsPvANSEcBWozhJKS6_hXRzzXbRe0UH22oOHsn2cUeMpT2smOesXZ-N6a4O5GzbzCljeBeYtnhcM6pi5dyx_kCkIZfvB5Q9gR7EEU4yUBq87FjJE4x5k2RO2PROEi4KN7iOJQfUONKXuSeCAtVG4ALSMt-GHCWF2q6TUGNnw1btVMeFBzRHCrvxeH8kRueXzf8s3-vuqIyXuVTSIqEYhA-bhzPxbpU0ttZIpEqinlQWL-E9Ytm9tq7_zZR4W30me_8czTIAo8aGjZbDez1CHOB2XiFlkwrefgX7QlyZfdU_9N5TifPHDHX3iyGXdjdl4NSlO2ln35Zy-1Zk8OT1xKlTEnCyLLzr2ZLmsAIB7x2riKTfnPKpj93v7r0IeJJUHJZ4U6ZlrZIsygbLtU-pIuEw-Xxkshti1T5UeqDtCZkEOTSiANOZXEOZZBCHb8KOtJBYloRWI9g0tLS2PjFNDQ65OQ9IH6aZQ2ybZl51U2kVRtfDUYMxBLkB7NPWm5_zTVwa7dWhPPhl7PERqv-gk7HAj_w31lVLqzuD58JGBTRE5vtV2KDWQGgdXD3AaCh6Q7WN2qL_-x0sERAf0VaXn5deQTAie4kO3xwuJVlpvxxjrYh5viVGjTDUOXHfZQJyJ3JV2Rz3up4lZLg33Gr6Ym_kpgJmYqFn9JfhAbZSJDsSvAk3iGF4Tw-XvIEotq7dQn21k1R0c8KW1-nMA
+2025-02-01 19:52:10,743 - INFO - Executing challenge command: signal-cli -a +85265091684 submitRateLimitChallenge --challenge 5fad97ac-7d06-4e44-b18a-b950b20148ff --captcha 03AFcWeA7klLd94B7_ohQg8lAW355lRMMcVzbSA75Tr45NX_iussd15SD2PIDwq-hDbZs2D1vozZyB6UCk-McLLDDJbOtQcQo-UpoLBNi89eRrW5IVtI2lWn3EVFYXQXdwqj9OxQUxQ7Fd5IxljblIKsAvRHILqLaZrwlW4_ahPwccLIMsEPAuciaggPOgT59SOXy7F3_F5nk4L4yuPHWOUj6369yBDIBbLOZ9C7_T8aaG-p0pl-hH8gm073IOHSX4lf5FyhtuThtUI7dke6ja9o4zM2kLIoTUk5FUXhdbAvazT5nfTj4XKJozEHPxYX_MpsGYBdhlfUK5cwDId9LjKRmIFIbzdaCKFq5FUpn8PZxuvw8bVAOpzQHmqW31qhrYw702gSBdy5vpXmPxyMraBDED9J026G8L1DmOOqc7jz4tNpNjkR5-nwEWbK6uRWCuxjo2jPtJqKatHIKADOXFYX91xWZCub_Cslb9vPzh5BMnadUUeUYWrrn033Q44RflL29TK3p-dMbrHm_hA1-2N_nCEh2NdyKACQRYnJM6-dvfFZsojrIAgDbicKg0vi-1de9BIPsm60hdwq_wGUjKJw6bwaUDsV5ch8RyCkOrjb-m0tw1wBQNNBqlERvAnmj1bpgfye4iJH6b8GEmcF3pLTJkwXeRGktFvMur5ia5Gqa0CzjSqvlodmBV8xIBU47l6WpIc_Bkyj0Yr3mzkI4f1KYc4fZbkqj8l8fCqsbIQe9XH0KtNhuAdBgwnufHZQHtJKlGnWJKaa88XcJn8_Pub4FRTqMlRlIh4-Lhf4Jfsy6TTHTXEqh4j-4MVy_s5MTxZqXB62KT9_jYiDh4fTb_kBFfKjf54Rso2Qg9bXlqStGFGV1519-ZWjKEg0DLbZPdOJYhNK-24IdHYmuv4tT7jVR7HiJZondyEw7uqxtIWgGO-aSkz-GUU8v3RuNTB212jwgB3Fhsb3YLWqAhSzJyHV7k65MerS_4Upl_UVW1rpkrxKs5JW2L884riUHqUz6xIrBTRqxjo49CgfoFvf-2isqmHgnTKDZRhqBxtSxpAKikBTNOHEkEK0QGyWmSo2w1tz6tQJi1_U087aYoc7muJHbxlMJLdWZWL_n5bAXuqdjB-cfu_HngWFPPx_xxlKs9e28yvk4SIHHwR_H5wJ3WB8qfaENg06F2TiQZRVaO9rd_VP4L_xfjeuydjUqU7qplLr9xrp4_Jdiit9gbEQ0XDI4n7so_Mayk75WCSX2UflqsssE9-f722YIrpFxWK0QeHrzH5m0QXhEqiof4boM8ppGF7eDjl4DZoAfJbZWjwGr9Vuq4lWKlSsEIyHbTQssMJNejLvm6oPMOF1Tg6YXg_1XP-xauGGivDu8JEIE7Jhwd0aR5kLkI8ytHZ8i0avmUi9dbrxlTaSaCUQ55kt29iiqT4x_fWo4QGF9VCUFJ9sZb1vpW_Uh4b5EKGYp7Dko1a7TRxUNfMydd4xX-ysU69yXToUq9Jpdh6sdkr_H80FwgS_ZU6Z_mtYjIq_9Wt9Hs9wqA-8pVRfRjA5-hg6GsPvANSEcBWozhJKS6_hXRzzXbRe0UH22oOHsn2cUeMpT2smOesXZ-N6a4O5GzbzCljeBeYtnhcM6pi5dyx_kCkIZfvB5Q9gR7EEU4yUBq87FjJE4x5k2RO2PROEi4KN7iOJQfUONKXuSeCAtVG4ALSMt-GHCWF2q6TUGNnw1btVMeFBzRHCrvxeH8kRueXzf8s3-vuqIyXuVTSIqEYhA-bhzPxbpU0ttZIpEqinlQWL-E9Ytm9tq7_zZR4W30me_8czTIAo8aGjZbDez1CHOB2XiFlkwrefgX7QlyZfdU_9N5TifPHDHX3iyGXdjdl4NSlO2ln35Zy-1Zk8OT1xKlTEnCyLLzr2ZLmsAIB7x2riKTfnPKpj93v7r0IeJJUHJZ4U6ZlrZIsygbLtU-pIuEw-Xxkshti1T5UeqDtCZkEOTSiANOZXEOZZBCHb8KOtJBYloRWI9g0tLS2PjFNDQ65OQ9IH6aZQ2ybZl51U2kVRtfDUYMxBLkB7NPWm5_zTVwa7dWhPPhl7PERqv-gk7HAj_w31lVLqzuD58JGBTRE5vtV2KDWQGgdXD3AaCh6Q7WN2qL_-x0sERAf0VaXn5deQTAie4kO3xwuJVlpvxxjrYh5viVGjTDUOXHfZQJyJ3JV2Rz3up4lZLg33Gr6Ym_kpgJmYqFn9JfhAbZSJDsSvAk3iGF4Tw-XvIEotq7dQn21k1R0c8KW1-nMA
+2025-02-01 19:52:17,701 - ERROR - Failed to submit rate limit challenge. Error: Submit challenge error: [400] Bad response: 400 : {"code":400,"message":"too few parts"}
+2025-02-01 19:52:22,704 - INFO - Executing command: type message.txt | signal-cli -u +85265091684 send +971551494508 --message-from-stdin
+2025-02-01 19:52:34,794 - ERROR - Failed to send message to +971551494508. Error: Failed to send message due to rate limiting
+2025-02-01 19:52:36,303 - INFO - Captcha task created with ID: 883144717
